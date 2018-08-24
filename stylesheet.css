@@ -1,0 +1,34 @@
+* {
+	box-sizing: border-box;
+}
+h1 {
+	text-align: center;
+	background-color:magenta;
+	color:black;
+}
+
+body {
+	background-image: url("sadness.jpg");
+	background-color: black;
+}
+.collumn {
+	text-align:justify;
+	float:left;
+	background-color: purple;
+	color: yellow;
+	font-size:13pt;
+	width:33%;
+	padding:15px;
+}
+
+.row:after {
+	content:"";
+	display:table;
+	clear:both;
+}
+
+@media screen and (max-width: 600px) {
+    .box1 {
+        width: 100%;
+    }
+}

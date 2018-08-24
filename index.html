@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+	<meta charset="UTF-8">
+	<head>
+		<title> Sadness Simulator 95</title>
+		<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	</head>
+	<body>
+		<h1> Welcome to sadness simulator 95 </h1>
+		<div class="row">
+			<div class="collumn">
+			<h1> Grafo </h1>
+				<p> Dado um par de conjuntos V e A, onde 
+				<list>
+					<li> V - conjunto não vazio de vértices/nodos </li>
+					<li> A - conjunto de pares ordenados a = (v,w),
+						 v e w ∈ V: as <strong> arestas </strong> do 
+						 grafo. </li>
+				</list>
+				<h2> Exemplo </h2>
+				Seja o grafo G(V,A) dado por 
+				<list>
+					<li> V = {p | p é uma pessoa} </li>
+					<li> A = { (v, w) | &lt v é amigo de w &gt }  </li>
+				</list>
+				Nesse exemplo, a relação é <strong> simétrica </strong>, isso é,
+				se <italic> &lt v é amigo de w &gt, então &lt w é amigo de v &gt.
+				Assim, as arestas que ligam os vértices não possuem orientação.
+				<br>
+				<img src="grafo.gif" width="80%">
+			</div>
+			<div class="collumn">
+			<h1> Digrafo (Grafo Orientado) </h1>
+			<p> Dado o grafo definido por: </p>
+			  <list>
+				V = { p | p é uma pessoa da familia Jorgensen}
+				A = { (v,w) | &lt v é pai/mãe de w &gt }
+			  </list>
+			<p> Essa relação é <strong> não simétrica </strong>,
+			resultando em uma orientação no grafo. Esse tipo de 
+			grafo é dito <strong> grafo orientado </strong> ou 
+			<strong> digrafo </strong>, onde as conexões entre 
+			vértices são chamadas de <strong> arcos. </strong>
+			<br>
+			<img src="digrafo.gif" width="80%">
+			
+		</div>
+		<div class="collumn">
+			<h1> Conceitos de Grafos</h1>
+			<h2> Ordem </h2>
+			<p> A ordem de um grafo G é dada pela cardinalidade do 
+			conjunto de vértices (número de vértices). </p>
+			
+			<h2> Adjacência </h2>
+			<p> Em um grafo simples, dois vértices v e w são 
+			adjacentes (ou vizinhos) se há uma aresta a=(v,w) em G.
+			Essa aresta é <italic>incidente</italic> a ambos v e w. 
+			
+			<p> Se o grafo for dirigido, a adjacência é especializada em: </p>
+			<list>
+				<li> <strong>Sucessor: </strong> um vértice w é sucessor de 
+				v se há um arco que parte de v e chega em w. </li>
+				<li> <strong> Antecessor> </strong> um vértice v é antecessor
+				de w se há um arco que parte de v e chega em w. </li> 
+			</list>
+			
+			<h2> Grau </h2>
+			
+			<p> O grau de um vértice é dado pelo número de arestas que lhe são
+			incidentes. </p>
+			
+			<p> No caso de digrafos, a noção de grau é especializada em:</p>
+			
+			<list>
+				<li> <strong>Grau de emissão:</strong> o grau de emissão 
+				de um vértice v corresponde ao número de arcos que partem de 
+				v.</li>
+				<li> <strong>Grau de recepção:</strong> o grau de recepção 
+				de um vértice v corresponde ao número de arcos que chegam a v.</li>
+			</list>
+			
+			<h2> Fonte </h2>
+			
+			<p> Um vértice v é fonte se seu grau de recepção é nulo. </p>
+			
+			<h2> Sumidouro </h2>
+			
+			<p> Um vértice v é sumidouro se seu grau de emissão é nulo. </p>
+			
+			<h2> Laço </h2>
+			
+			Um laço é uma aresta ou arco do tipo a = (v,v), que relaciona
+			um vértice a ele próprio.
+		</div>
+		
+		
+	</body>
+</html>
